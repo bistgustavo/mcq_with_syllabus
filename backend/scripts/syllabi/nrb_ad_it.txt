@@ -1,0 +1,178 @@
+Paper I: Information Technology I
+
+Computer Architecture & Organization and Microprocessors [4]
+- Basic structures: sequential circuits, design procedure, state diagram and state table, Von Neumann and Harvard architecture, RISC/CISC, SISD, SIMD, MISD, MIMD, addressing methods, representation of data, arithmetic operations, bus structures, instruction and excitation cycle
+- Processing unit: instruction formats, arithmetic and logical instructions, addressing modes and formats
+- Input output organization: I/O programming, memory mapped I/O, basic interrupt system, DMA
+- Computer arithmetic: ALU, integer arithmetic and representation, floating-point arithmetic
+- Memory systems: internal memory, cache memory, direct memory access, external memory
+- CPU structure and function: processor and register organization, PowerPC processor
+- 808X and Intel microprocessors: programming and interfacing, microinstruction sequencing and execution
+
+Digital Logic Design [3]
+- Digital logic gates: basic, exclusive and universal gates, positive and negative logic
+- Combinational logic circuits: Boolean algebra, K-map, minterms and maxterms, SOP and POS
+- Data processing circuits: adders and subtractors, MUX and DEMUX, encoders and decoders, parity generators and checkers, comparators, ROM and PLDs
+- Arithmetic circuits: binary addition and subtraction, signed and unsigned numbers
+- Flip-flops: latches, SR, D, T and JK flip-flops, flip-flop conversion, characteristic equations, excitation tables, master-slave flip-flops
+- Registers: SISO, SIPO, PISO, PIPO
+- Counters: synchronous, asynchronous, up/down, modulus and decade counters, digital clock
+- Sequential machines: synchronous machines with single and multiple serial inputs, design using different flip-flops, asynchronous machine design
+- Digital ICs: BJT and MOSFET as switches, RTL, DTL, TTL, I2L, ECL, MOS and CMOS, Bi-MOS
+
+Operating Systems [3]
+- OS concepts: definition, development and functions of OS, functional architecture, types of OS, network and distributed OS
+- Processes and threads: symmetric multiprocessing, micro-kernels, concurrency, mutual exclusion and synchronization, IPC, semaphores, process scheduling, deadlock
+- Memory and disk management: disk allocation and scheduling methods, basic memory management, virtual memory management, process management system
+- OS security and parallel processing: parallel and distributed processing, security threats to OS, authentication and access authorization, system flaws and attacks, trusted system
+- I/O and files: I/O devices and organization, principles of I/O software and hardware, disks, files and directory organization, file system implementation, interrupt handling
+- Distributed systems in OS: distributed message passing, RPC, client/server computing, cluster computing
+
+Database Management System and Design [3]
+- Database fundamentals: database models, relational model, integrity, RDBMS
+- SQL: SQL and embedded SQL, DDL, DML, DCL, SQL middleware (SQL API, open SQL gateway)
+- SQL queries: restricting and sorting data, subqueries, manipulating data, creating and managing tables, views and controlling user access, set operators, date-time functions
+- Relational database design: ER diagram, keys (primary, foreign, candidate, alternate)
+- Normalization: 1NF, 2NF, 3NF, BCNF, 4NF and functional dependencies
+- RDBMS products and servers: MSSQL, Oracle, MariaDB, time-series databases, database servers, functions, procedures, triggers and rules
+- Transactions and recovery: transaction management, concurrency control, crash recovery, types of failure, recovery techniques
+- Query processing and indexing: query processing and optimization, hash-based and tree-based indexing
+- Advanced databases: distributed and object-oriented database systems, data mining and data warehousing, security management system
+
+Computer Networks [2]
+- Network fundamentals: OSI and TCP/IP models, topologies, client/server and P2P, repeater, hub, bridge, switch, router
+- Link layer: flow and error control, error detection and correction, ALOHA, slotted ALOHA, 802.3 Ethernet CSMA/CD, Token Bus, Token Ring, FDDI, PPP, HDLC, Frame Relay, ATM, X.25, MPLS
+- Network layer: datagram and virtual circuits, routing algorithms, IPv4/v6 headers, addressing and subnetting, VLSM, CIDR, ICMPv4/v6, RIP, OSPF, BGP, IS-IS
+- Transport layer: multiplexing and demultiplexing, UDP, TCP, flow control, sliding window, congestion control, leaky bucket and token bucket, socket programming
+- Upper layers: application, presentation and session layers, WWW, DNS, DHCP, FTP, SMTP/POP/IMAP, PGP
+- Network management: proxy, web and DNS servers, IP interconnection, tier ISP architecture, VoIP, FoIP, Telnet, SSH, traffic monitoring (MRTG, bandwidth, throughput, latency), NAS, SAN
+- Latest networking: SDN, SoDIP6, IPv6 migration, SDN migration, IoT, WSN, NGN
+
+Distributed System [5]
+- Client-server computing: building blocks, distributed infrastructure
+- Fundamental models: RPC/RMI, CORBA
+- Synchronization: physical and logical clocks (Cristian, Lamport, vector), distributed mutual exclusion, election algorithms
+- Replication and fault tolerance: recovery, distributed file systems (SUN-NFS, HDFS)
+- Distributed transactions: concurrency control, distributed deadlock
+
+Cryptography and Network Security [5]
+- Security attacks and conventional encryption: conventional encryption model, simplified DES, block cipher principles
+- Public-key cryptosystems: RSA, Diffie-Hellman, prime and relatively prime numbers
+- Message authentication and hash functions: digital signatures, digital signature standards, authentication protocols
+- Kerberos and email security
+- Web security: SSL, TLS, SET
+- Intruders and viruses
+- Firewalls: firewall design, DMZ, masquerading, proxy firewall, NAT
+- Information security audit: CISA, SOC 2
+- Blockchain and cloud security: blockchain, security in cloud, fog and edge computing
+
+Paper II: Information Technology II
+
+Programming Language [3]
+- Language fundamentals: history, programming paradigms, language translators, fundamental issues in language design
+- Implementation: virtual machines, code generation, loop optimization
+- Programming styles: procedural, structured and object-oriented programming
+- C/C++ fundamentals
+- Java: declaration, modularity and storage management
+
+Data Structure and Algorithms [3]
+- Fundamentals and ADTs: stacks, queues, lists, linked lists
+- Trees: traversal, binary trees, BST, balanced trees, AVL, indexing, hashing trees, suffix trees
+- Complexity: time and space complexity, Big-O, recursive and non-recursive algorithm analysis
+- Algorithm design: searching, merging, sorting, divide-and-conquer, dynamic programming, greedy, backtracking
+- Graph algorithms: DFS, BFS, shortest path, MST, DAGs
+
+Discrete Mathematics [3]
+- Logic and proofs: propositional logic, predicate logic and quantification, methods of proof, mathematical induction, program correctness
+- Sets, functions and number theory: sets and functions, arithmetic algorithms, integer properties and matrices, sequences and summations, recursion
+- Growth of functions and computational complexity
+- Graphs and trees
+- Languages and automata: languages and grammars, finite-state machines, automata and language recognition, Turing machines
+
+Compiler Design [3]
+- Compiler structure and analysis: lexical, syntax and semantic analysis
+- Parsing: top-down and bottom-up parsing, syntax-directed translation
+- Types and run-time: types and type checking, run-time storage administration
+- Code generation: intermediate code generation, code generator, code optimization, recent developments in compilers
+
+System Analysis and Design [3]
+- Systems and SDLC: system owner, user, designer, builder, analyst, SDLC, spiral, waterfall, RAD, JAD
+- System design environment and concept formulation
+- Requirements analysis: analysis, requirement and design models
+- Object-oriented analysis and design
+- Modelling tools: ER diagram, context diagram, DFD, UML
+
+Software Engineering Principles [3]
+- Lifecycle models and risk-driven approaches
+- Software project management: planning, control, organization, risk, cost models, configuration management, version control, quality assurance, metrics
+- Requirements engineering: elicitation, analysis tools, definition, static and dynamic specification, review
+- Software design: design for reuse and change, design notations, evaluation and validation
+- Implementation and testing: standards, modularity, data abstraction, static analysis, unit, integration and regression testing, testing tools, fault tolerance, maintenance
+- Process and tools: tools and environments, process maturity, ISO standards, SEI-CMM, CASE tools
+
+MIS and Web Engineering [4]
+- Information systems: client-server computing, IS architecture, control of IS
+- Web engine architecture and database design issues: data mining, data warehousing
+- Knowledge management and strategic use of IT: BPR with IT, ERP, global IT issues
+- Applications: advanced spreadsheets, CBSE, multimedia communications, OOP with COM and DCOM, GDSS
+- Website design: HTML, DHTML, XML
+
+Computer Graphics [3]
+- Graphics concepts and hardware: input devices and techniques, graphics hardware
+- Raster algorithms: raster primitives, scan conversion
+- Transformations and viewing: 2D transformations and viewing, 3D geometry and viewing, hierarchical modeling, projections
+- Visible surfaces and rendering: hidden surface removal, shading and rendering (Phong, Gouraud)
+
+Paper III: Current Developments in IT Sector and Emerging Technologies
+
+IT in Central Bank (NRB) and Nepalese Banking Sector [3]
+- History of the central bank and of IT in Nepalese banking
+- Use of IT in Nepalese banking: uses of computers and software development
+- IT risks in banking and their management, IS audit of banks
+
+Relevant Acts, Policies and Guidelines [2]
+- NRB Act 2058
+- Electronic Transaction Act 2063
+- ICT Policy 2072, Broadband Policy 2071 and Satellite Policy 2077
+- NRB IT Guidelines 2012
+
+Internet and Network Programming [2]
+- CGI programming: CGI applications, CGI input (environment variables), CGI output (response headers), forms and CGI
+- Socket programming: Unix and Internet domain sockets, socket address structure, socket system calls
+- Java introduction: history, features, Java vs C/C++, program structure, statements
+
+Cyber Security and Ethics [3]
+- Security technologies, information security and cryptography
+- Legal issues in cyber crime, cyber law
+- Ethics: ethics in cybersecurity, professional and ethical responsibilities, risks and liabilities of computer-based systems
+
+FinTech, RegTech and SupTech [2]
+- FinTech technologies: API, AI, ML, IoT, big data analytics, distributed ledger technology, smart contracts, cryptography, biometrics
+- RegTech: identity management, risk management, regulatory reporting, transaction monitoring, financial market trading
+- SupTech: data input, data pull, real-time access, reporting utilities, intelligence gathering, data quality management
+
+E-Commerce Technology [3]
+- E-commerce and m-commerce: strategies, security issues, B2B, B2C, B2E, C2C, G2G, G2C
+- Electronic payment and e-banking: EDI, SWIFT, e-marketing, reverse engineering
+- E-commerce technologies: encryption and decryption, XML, layout managers, event model
+
+E-Governance [3]
+- E-governance fundamentals: history, working principles and models, G2G, G2B, global trading and adoption
+- E-government lifecycle, online service delivery and infrastructure
+- Electronic payments in e-governance: EFT, payment gateways, EPS, mobile governance
+
+Artificial Intelligence and Machine Learning [2]
+- AI foundations: problem decomposition and planning, logic and reasoning
+- NLP and artificial neural networks
+- Machine learning and pattern recognition
+
+Cloud Computing [3]
+- Cloud basics: characteristics, cloud vs fog vs edge, cloud federation
+- Data storage and security in the cloud
+- Virtual machines and containers
+- Ubiquitous clouds and IoT, future of cloud, federated learning
+
+Development in Virtual Currency [2]
+- History and development of virtual currency
+- Virtual currency models
+- Risks, benefits, prospects and challenges of virtual currency

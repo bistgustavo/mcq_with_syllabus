@@ -1,0 +1,115 @@
+Part I: General Awareness and General Reasoning
+
+General Awareness and Contemporary Issues [25]
+- Geography and demography of Nepal: physical, socio-cultural and economic geography, location, area, boundaries, census figures
+- Natural resources of Nepal: water, forest, mineral and land resources
+- Climate, diversity, livelihood and heritage: geographical diversity, climatic conditions, lifestyle, cultural and natural heritage
+- Modern history of Nepal: notable events and personalities
+- Current periodic plan: 16th plan compared with the 15th plan
+- Sustainable development, environment and science & technology: SDGs, pollution, climate change, disaster, S&T
+- International affairs: UN, SAARC, BIMSTEC and other international organizations, Nepal's foreign relations
+- Constitution of Nepal: Parts 1 to 5 and the Schedules, fundamental rights and duties
+- Governance system: federal, provincial and local government structure
+- Civil Service Act 2049 and Civil Service Regulation 2050
+- Functional scope of public services
+- Public Service Charter (Citizen Charter)
+- Public policy: concept, objectives and importance
+- Fundamentals of management: planning, organizing, leading, controlling, motivation, leadership
+- Government planning, budgeting, accounting and audit system
+- Current affairs: national and international events
+
+Logical (Verbal) Reasoning [9]
+- Series and analogy: letter and word series, analogy, classification
+- Coding-decoding, direction sense, blood relations and ranking
+- Syllogism, Venn diagrams, statement and conclusion, statement and assumption
+
+Numerical Reasoning [8]
+- Number series and arithmetic: percentage, ratio and proportion, average
+- Commercial arithmetic: profit and loss, simple and compound interest, time and work, time and distance
+- Calendar, clock, data sufficiency and data interpretation
+
+Spatial (Non-verbal) Reasoning [8]
+- Figure series, figure analogy and classification
+- Mirror and water images, embedded figures
+- Cubes and dice, paper folding and cutting, counting of figures
+
+Part II: General Technical Subject (IT)
+
+Computer Fundamentals [5]
+- Computers and their kinds: kinds of computers by size and function, generations of computers
+- Computer components and architecture: system unit, CPU, memory, connecting the components, starting the computer
+- Input, storage and output devices: keyboard, mouse, floppy and hard drives, USB devices, monitors, printers, modems, sound boards
+- DOS and Windows survival guides: command prompt, AUTOEXEC.BAT and CONFIG.SYS, desktop, Program Manager, File Manager, Windows Explorer
+- Application software and the Internet: e-mail, Internet, intranet, extranet, Ethernet, HTTP
+- Computer viruses and antivirus
+
+Data Structure and Algorithms [4]
+- Fundamentals and ADTs: lists, linked lists, stacks, queues, priority queues
+- Trees: traversal, binary trees, BST, balanced search trees, AVL trees, indexing methods, hashing trees, suffix trees
+- Algorithm analysis: worst-case and expected time complexity, recursive and non-recursive algorithms
+- Algorithm design: searching, merging, sorting, divide-and-conquer, dynamic programming, greedy methods, backtracking
+- Graph algorithms: DFS, BFS, shortest path, minimum spanning trees, DAGs
+
+System Analysis and Design [5]
+- Systems and roles: system owner, user, designers, builders, system analysts, system life cycle
+- Joint Application Development (JAD): purpose, scope, participants and roles
+- System design environment: development and management process, components of computer-based information systems, centralized and distributed systems
+- Concept formation and feasibility: finding the problem, evaluating proposals, technical, operational and economic feasibility
+- Requirements analysis and design: system analysis model, requirement model, design model, design methods
+- E-R modelling: strong and weak entities, attribute types, relationship sets, degree and cardinality, specialization, generalization, aggregation
+- Data flow diagrams: symbols, context diagram, top-level and expanded-level DFDs
+- Object modeling: OO concepts, association, composition, inheritance, use case, state and event flow diagrams, documentation
+
+Operating Systems [5]
+- OS concepts: definition, development and functions, basic components, information storage and management
+- Process and memory management: disk allocation and scheduling, memory management, virtual memory, process scheduling, IPC, deadlocks
+- Parallel and distributed processing, security threats to an OS
+- MS-DOS, Windows, Unix and Linux: product families, Windows and Linux architecture, Windows networking
+- OS administration: troubleshooting Windows and Linux, network printing, hard disks and partitions, monitoring, users, groups and permissions
+
+Database Management System and Design [7]
+- Database fundamentals: database models, relational model, integrity, RDBMS
+- SQL: SQL and embedded SQL, basic SELECT statements, restricting and sorting data, single-row functions
+- Advanced SQL: joins, group functions, subqueries, manipulating data, creating and managing tables, views and user access, set operators, date-time functions
+- Database design: logical and conceptual design, mapping, physical design, integrity, relational algebra, relational calculus
+- Normalization: 1NF, 2NF, 3NF, BCNF, 4NF, 5NF, DKNF
+- DBMS architecture: client-server, open architectures, transaction processing, concurrency, backup and recovery, major RDBMS products (Oracle, Sybase, DB2, SQL Server)
+
+Programming Language [4]
+- Language fundamentals: history, paradigms, language translators, fundamental issues in language design
+- Implementation: virtual machines, code generation, loop optimization
+- Programming styles: procedural, structured and object-oriented programming
+- C and C++ programming
+- Java: declaration, modularity and storage management
+
+Networking [5]
+- Network basics: models, connectivity, addressing, data packets, reliable delivery, connection devices
+- Advanced theory: OSI model, Ethernet, Token Ring, FDDI, wireless networks
+- Protocols and TCP/IP services: NetBEUI, bridges and switches, TCP/IP suite, DHCP, DNS, NetBIOS, SNMP, FTP, TCP/IP utilities
+- LAN and WAN infrastructure: IP routing, routing tables, VLANs, WAN transmission technologies, voice over data, remote access, VPN
+- Network security and disaster recovery: viruses, worms, Trojans, network access and Internet security, backup, fault tolerance
+- Storage and troubleshooting: enterprise storage, clustering, NAS, SAN, systematic troubleshooting, support tools, network components and ports
+
+Computer Architecture and Organization [2]
+- Evolution and design: design methodology, instruction set architecture, MIPS ISA, ALU design
+- Datapath design: single- and multi-cycle datapath, pipelining, memory hierarchy, I/O system, buses
+
+Compiler Design [1]
+- Compiler phases: lexical, syntax and semantic analysis, run-time environment, intermediate code, optimization, compiler generation tools
+
+E-Commerce Technology [2]
+- E-commerce and e-business: strategies, security issues, success models of e-governance, B2B, B2C, B2E, C2C, G2G, G2C
+- Electronic payment and e-banking: payment systems, e-marketing, reverse engineering, EDI, SWIFT, encryption, XML, event model
+
+MIS and Web Engineering [5]
+- Information systems and decision making: client-server computing, database design issues, data mining, data warehousing
+- Strategic IT: knowledge management, reengineering with IT, ERP, IS security, information privacy, global IT issues
+- Applications: advanced spreadsheets, CBSE, multimedia, OOP with COM and DCOM, group decision support systems
+- Website design basics
+
+IT in Nepal [5]
+- History of IT in Nepal
+- IT policy of Nepal
+- Electronic Transaction Act and Copyright Act
+- Uses of computers and software development in Nepal
+- Nepali Unicode, Nepali fonts and licensing issues

@@ -1,0 +1,82 @@
+# Production stack:  docker compose -f docker-compose.prod.yml up -d --build
+# Cloud Qdrant/Redis/LLMs are used when configured and reachable; the local
+# qdrant/redis/ollama services below are the automatic fallback.
+services:
+  mysql:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?set MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: mcq_platform
+      MYSQL_USER: mcq_user
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?set MYSQL_PASSWORD}
+    volumes: [mysql_data:/var/lib/mysql]
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u mcq_user -p$$MYSQL_PASSWORD"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  qdrant:
+    image: qdrant/qdrant:v1.12.4
+    restart: always
+    volumes: [qdrant_data:/qdrant/storage]
+
+  redis:
+    image: redis:7-alpine
+    restart: always
+    command: redis-server --appendonly yes
+    volumes: [redis_data:/data]
+
+  ollama:
+    image: ollama/ollama:latest
+    restart: always
+    volumes: [ollama_data:/root/.ollama]
+
+  backend: &backend
+    build: ./backend
+    restart: always
+    env_file: .env
+    environment: &backend_env
+      APP_ENV: production
+      DATABASE_URL: mysql+pymysql://mcq_user:${MYSQL_PASSWORD}@mysql:3306/mcq_platform
+      QDRANT_LOCAL_URL: http://qdrant:6333
+      REDIS_LOCAL_URL: redis://redis:6379/0
+      OLLAMA_BASE_URL: http://ollama:11434
+      UPLOAD_DIR: /app/uploads
+      CORS_ORIGINS: ${PUBLIC_URL:?set PUBLIC_URL, e.g. https://exam.example.com}
+      WEB_CONCURRENCY: ${WEB_CONCURRENCY:-3}
+    depends_on:
+      mysql: { condition: service_healthy }
+      qdrant: { condition: service_started }
+      redis: { condition: service_started }
+    volumes:
+      - uploads:/app/uploads
+      - hf_cache:/home/app/.cache/huggingface
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/api/v1/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+
+  worker:
+    <<: *backend
+    command: celery -A app.workers.celery_app worker --loglevel=info --concurrency=${WORKER_CONCURRENCY:-2}
+    depends_on:
+      backend: { condition: service_healthy }
+    healthcheck:
+      disable: true
+
+  frontend:
+    build: ./frontend
+    restart: always
+    ports: ["${HTTP_PORT:-80}:80"]
+    depends_on: [backend]
+
+volumes:
+  mysql_data:
+  qdrant_data:
+  redis_data:
+  ollama_data:
+  uploads:
+  hf_cache:

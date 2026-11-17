@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fallback brand palette (blue) and accent (crimson); BrandingContext overrides these. */
+:root {
+  --brand-50: 239 246 255; --brand-100: 219 234 254; --brand-200: 191 219 254; --brand-300: 147 197 253;
+  --brand-400: 96 165 250; --brand-500: 59 130 246; --brand-600: 37 99 235; --brand-700: 29 78 216;
+  --brand-800: 30 64 175; --brand-900: 30 58 138; --brand-950: 23 37 84;
+  --accent-50: 255 241 242; --accent-100: 255 228 230; --accent-200: 254 205 211; --accent-300: 253 164 175;
+  --accent-400: 251 113 133; --accent-500: 244 63 94; --accent-600: 225 29 72; --accent-700: 190 18 60;
+  --accent-800: 159 18 57; --accent-900: 136 19 55; --accent-950: 76 5 25;
+}
+
+@layer base {
+  html { @apply bg-ink-50 text-ink-800 antialiased; font-feature-settings: 'cv11', 'ss01'; }
+  html.dark { @apply bg-ink-950 text-ink-200; color-scheme: dark; }
+  body { @apply min-h-screen; }
+  ::selection { @apply bg-brand-200 text-brand-900; }
+}
+
+@layer components {
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.12em] text-brand-600 dark:text-brand-400; }
+  .num { font-variant-numeric: tabular-nums; }
+}
